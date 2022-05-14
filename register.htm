@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游客登记</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript">
+        function MM_validateForm() { //v4.0
+            if (document.getElementById) {
+                var i, p, q, nm, test, num, min, max, errors = '', args = MM_validateForm.arguments;
+                for (i = 0; i < (args.length - 2); i += 3) {
+                    test = args[i + 2]; val = document.getElementById(args[i]);
+                    if (val) {
+                        nm = val.name; if ((val = val.value) != "") {
+                            if (test.indexOf('isEmail') != -1) {
+                                p = val.indexOf('@');
+                                if (p < 1 || p == (val.length - 1)) errors += nm;
+                            } else if (test != 'R') {
+                                num = parseFloat(val);
+                                if (isNaN(val)) errors += nm;
+                                if (test.indexOf('inRange') != -1) {
+                                    p = test.indexOf(':');
+                                    min = test.substring(8, p); max = test.substring(p + 1);
+                                    if (num < min || max < num) errors += nm + min + ' and ' + max + '.\n';
+                                }
+                            }
+                        } else if (test.charAt(0) == 'R') errors += nm + ' is required.\n';
+                    }
+                } if (errors) alert('号码必须为数字\n' + errors);
+                document.MM_returnValue = (errors == '');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <header>
+        <marquee behavior="alternate" direction="right" loop="infinite" scrollamount="30" scrolldelay="300"
+            align="middle" height="50" class="w" onmousemove="this.stop()" onmouseout="this.start()"
+            style="display: block;">
+            潮汕，欢迎您！
+        </marquee>
+    </header>
+    <section class="w clearfix">
+        <dl>
+            <dt><a href="index.html">首页</a></dt>
+        </dl>
+        <dl>
+            <dt><a href="#">美食</a></dt>
+            <div class="dd">
+                <dd><a href="beef.htm">潮汕牛肉火锅</a></dd>
+                <dd><a href="guo.htm">粿品</a></dd>
+            </div>
+        </dl>
+        <dl>
+            <dt><a href="#">风景</a></dt>
+            <div class="dd">
+                <dd><a href="nanao.htm">南澳岛</a></dd>
+                <dd><a href="park.htm">小公园</a></dd>
+                <dd><a href="guju.htm">陈慈黉故居</a></dd>
+                <dd><a href="xiangzi.htm">湘子桥</a></dd>
+                <dd><a href="jylou.htm">揭阳楼</a></dd>
+            </div>
+        </dl>
+        <dl>
+            <dt><a href="xisu.htm">习俗</a></dt>
+        </dl>
+        <dl>
+            <dt><a href="tea.htm">茶文化</a></dt>
+        </dl>
+        <dl>
+            <dt><a href="#">戏曲舞种</a></dt>
+            <div class="dd">
+                <dd><a href="chaoju.htm">潮剧</a></dd>
+                <dd><a href="yingge.htm">英歌舞</a></dd>
+            </div>
+        </dl>
+        <dl>
+            <dt><a href="cuan.htm">红头船</a></dt>
+        </dl>
+        <dl>
+            <dt><a href="register.htm">游客登记</a></dt>
+        </dl>
+    </section>
+    <section class="w f">
+        <h1>游客登记</h1>
+        <form action="">
+            <div class="username">用户名：<input type="text" placeholder="请输入用户名"></div>
+            <div class="sex">性别: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex"
+                    id="">男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="">女</div>
+            <div class="old">年龄：<input name="old" type="text" id="old" placeholder="请输入年龄"></div>
+            <div class="address">籍贯：<input type="text" placeholder="请输入籍贯"></div>
+            <div class="phone">手机号码：<input name="number" type="text" id="number" placeholder="请输入手机号码"
+                    onBlur="MM_validateForm('number','','NisNum');return document.MM_returnValue"></div>
+            <div class="hobby">爱好：<input type="checkbox">唱歌&nbsp;&nbsp;&nbsp;<input
+                    type="checkbox">音乐&nbsp;&nbsp;&nbsp;<input type="checkbox">美食&nbsp;&nbsp;&nbsp;<input
+                    type="checkbox">旅游 &nbsp;&nbsp;&nbsp;<input type="checkbox">其他 <input type="text"
+                    style="width:180px; height: 25px;"></div>
+            <div class="text"><textarea name="" id="" cols="30" rows="10" placeholder="请谈谈您对潮汕的看法与意见"></textarea></div>
+            <button>提交</button>
+        </form>
+    </section>
+    <script>
+        var flag = 1;
+        var old = document.querySelector('#old');
+        old.addEventListener('blur', function () {
+            if (old.value < 1 || old.value > 100) {
+                alert('年龄不合规');
+            }
+            if (flag == 1) {
+                if (old.value != '') {
+                    old.value += '岁';
+                    flag = 0;
+                }
+            }
+            if (old.value == '') {
+                flag = 1;
+            }
+        })
+
+        var number = document.querySelector('#number');
+        number.addEventListener('blur', function () {
+            if (number.value.length != 11) {
+                alert('号码格式错误');
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南澳岛</title>
+    <!-- 引入小logo -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        body {
+            height: 980px;
+        }
+
+        section dl {
+            margin-bottom: 30px;
+        }
+
+        .nanao {
+            position: relative;
+            height: 500px;
+        }
+
+        .nanao img {
+            width: 400px;
+            height: 250px;
+            border-radius: 30px;
+        }
+
+        .nanao p {
+            width: 400px;
+            position: absolute;
+            top: 50px;
+            right: 360px;
+            z-index: 999;
+            font-size: 18px;
+            color: #000;
+        }
+
+        .nanao .bigImg {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 800px;
+            height: 500px;
+        }
+
+        .nanao .leftImg {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .nanbox {
+            display: flex;
+            height: 350px;
+        }
+
+        .nanbox img {
+            border-radius: 20px;
+        }
+
+        .one {
+            flex: 2;
+        }
+
+        .two {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <header>
+        <marquee behavior="alternate" direction="right" loop="infinite" scrollamount="30" scrolldelay="300"
+            align="middle" height="50" class="w" onmousemove="this.stop()" onmouseout="this.start()"
+            style="display: block;">
+            潮汕，欢迎您！
+        </marquee>
+    </header>
+    <section class="w clearfix">
+        <dl>
+            <dt><a href="index.html">首页</a></dt>
+        </dl>
+        <dl>
+            <dt><a href="#">美食</a></dt>
+            <div class="dd">
+                <dd><a href="beef.htm">潮汕牛肉火锅</a></dd>
+                <dd><a href="guo.htm">粿品</a></dd>
+            </div>
+        </dl>
+        <dl>
+            <dt><a href="#">风景</a></dt>
+            <div class="dd">
+                <dd><a href="nanao.htm">南澳岛</a></dd>
+                <dd><a href="park.htm">小公园</a></dd>
+                <dd><a href="guju.htm">陈慈黉故居</a></dd>
+                <dd><a href="xiangzi.htm">湘子桥</a></dd>
+                <dd><a href="jylou.htm">揭阳楼</a></dd>
+            </div>
+        </dl>
+        <dl>
+            <dt><a href="xisu.htm">习俗</a></dt>
+        </dl>
+        <dl>
+            <dt><a href="tea.htm">茶文化</a></dt>
+        </dl>
+        <dl>
+            <dt><a href="#">戏曲舞种</a></dt>
+            <div class="dd">
+                <dd><a href="chaoju.htm">潮剧</a></dd>
+                <dd><a href="yingge.htm">英歌舞</a></dd>
+            </div>
+        </dl>
+        <dl>
+            <dt><a href="cuan.htm">红头船</a></dt>
+        </dl>
+        <dl>
+            <dt><a href="register.htm">游客登记</a></dt>
+        </dl>
+    </section>
+    <div class="nanao w">
+        <img src="images/南澳2.jpg" alt="">
+        <img src="images/南澳4.jpg" class="leftImg">
+        <p>南澳岛是广东省唯一的海岛县，她是由37个大小岛屿所组成，陆地面积130.90平方公里（其中主岛面积128.35平方公里），海域面积4600平方公里，现有7万多常住人口。
+            南澳岛地处粤东海面，位于高雄——厦门——香港三大港口的中心点，濒临西太平洋国际主航线。<br>
+            南澳岛地处亚热带，北回归线横贯。冬暖夏凉的海洋性气候十分宜人，年平均气温只有21．5℃，且空气清新，没有各类污染工业，每立方厘米空气含负离子4000个，高于一般城市10至20倍。盛夏季节，海风习习，气候清爽，是避暑消夏的好地方。每逢夏季，国内外旅游者纷纷来到这里避暑、休憩、游览、消夏。南澳岛素有“粤东海上明珠”之称，旅游资源十分丰富，有“海、山、史、庙”文体交叉的特色。
+        </p>
+        <img src="images/南澳.jpg" class="bigImg">
+    </div>
+    <div class="nanbox w">
+        <img src="images/南澳3.jpg" alt="" class="one">
+        <img src="images/南澳5.jpg" alt="" class="two">
+    </div>
+</body>
+
+</html>
