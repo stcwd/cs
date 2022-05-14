@@ -1,0 +1,63 @@
+body {
+    height: 950px;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 顶部 */
+header {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 3px solid #000;
+    font-size: 22px;
+}
+
+/* 菜单栏 */
+section dl {
+    position: relative;
+    width: 150px;
+    float: left;
+    background-color: #3f3d3d;
+    margin-bottom: 30px;
+}
+
+section dl a,
+section dl dt {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+section dl .dd {
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #3f3d3d;
+}
+
+section dl a:hover {
+    background-color: #ff6700;
+}
+
+section dl .dd {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 9999;
+}
+
+section dl:hover .dd {
+    display: block;
+}

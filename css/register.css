@@ -1,0 +1,79 @@
+.f {
+    padding-left: 200px;
+}
+
+form div {
+    width: 500px;
+    height: 40px;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+div input {
+    font-size: 18px;
+}
+
+.phone input {
+    float: right;
+    width: 350px;
+    height: 35px;
+}
+
+.username input {
+    float: right;
+    width: 370px;
+    height: 35px;
+}
+
+.address input {
+    float: right;
+    width: 380px;
+    height: 35px;
+}
+
+.hobby {
+    width: 800px;
+}
+
+.sex input,
+.hobby input {
+    width: 18px;
+    height: 18px;
+}
+
+.text {
+    width: 800px;
+    height: 150px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #fff;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 350px;
+    border-radius: 10px;
+}
+
+.old input {
+    width: 380px;
+    float: right;
+    height: 35px;
+}

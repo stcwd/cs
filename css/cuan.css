@@ -1,0 +1,60 @@
+body {
+    height: 1200px;
+}
+
+.box {
+    height: 820px;
+    position: relative;
+}
+
+.box .hd p {
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    width: 500px;
+    font-size: 19px;
+    line-height: 50px;
+}
+
+.box .bd p {
+    position: absolute;
+    left: 50px;
+    top: 570px;
+    width: 500px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.box .bd .pic1 {
+    position: absolute;
+    top: 534px;
+    right: 0;
+}
+
+.box .bd .pic2 {
+    position: absolute;
+    top: 801px;
+    right: 0;
+}
+
+.pic1,
+.pic2 {
+    width: 600px;
+    height: 267px;
+    border-radius: 20px;
+    background-color: pink;
+    background: url(../images/红头船1.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.pic2 {
+    background-image: url(../images/红头船2.jpg);
+}
+
+.bd .pic1 {
+    background-image: url(../images/红头船3.jpg);
+}
+
+.bd .pic2 {
+    background-image: url(../images/红头船4.jpg);
+}

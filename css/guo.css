@@ -1,0 +1,35 @@
+.left {
+    float: left;
+    width: 200px;
+    height: 700px;
+    background-color: #c81623;
+    opacity: 0.8;
+}
+
+.right {
+    float: left;
+    width: 1000px;
+    height: 700px;
+}
+
+.left ul li {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.left ul li a {
+    color: #fff;
+    display: block;
+    height: 100%;
+}
+
+.left ul li:hover {
+    background-color: #fff;
+
+}
+
+.left ul li:hover a {
+    color: #c81623;
+}
