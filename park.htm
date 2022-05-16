@@ -37,7 +37,8 @@
             background-size: 100% 100%;
             border-radius: 25px;
             font-size: 20px;
-            color: #eee;
+            color: #ffe;
+            line-height: 35px;
         }
     </style>
 </head>
@@ -53,7 +54,7 @@
     </header>
     <section class="w clearfix">
         <dl>
-            <dt><a href="index.html">首页</a></dt>
+            <dt><a href="index.htm">首页</a></dt>
         </dl>
         <dl>
             <dt><a href="#">美食</a></dt>
@@ -115,13 +116,14 @@
                 show.style.backgroundImage = 'url(' + this.src + ')';
             })
             imgs[i].addEventListener('mouseout', function () {
-                show.style.backgroundImage = 'url( )';
+                show.style.backgroundImage = 'url(' + this.src + ')';
                 show.innerHTML = '';
             })
         }
         imgs[0].addEventListener('mouseover', function () {
             show.innerHTML = '汕头小公园开埠区，中心位置坐落于广东省汕头市金平区国平路、升平路、安平路交汇处，以“中山纪念亭”为发端，名为“四永一升平”的一道道骑楼老街呈环型放射状，形成城市街区。 范围西至西堤路、北至西港高架路—中山西路、东至福平路—张园内街—外马路—南海路、南至南海横路—外马路—商平路—至平路—海墘内街—棉安街—镇邦路，总面积72.43万平方米，较好地保留了20世纪30年代汕头市街区原貌，  见证和承载了汕头“百载商埠”的历史，成为汕头老城的核心地标和文化标志。 '
         })
+
     </script>
 </body>
 
